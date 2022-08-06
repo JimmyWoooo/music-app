@@ -1,0 +1,186 @@
+@media screen and (max-width: 912px) {
+    .song-container{
+        .vinyl{
+            width: 30rem;
+            height: 30rem;
+        }
+        img{
+            width: 70%;
+        }
+    }
+
+    .time-control, .volume-control{
+        width: 70%;
+    }
+    
+    nav{
+        button{
+            z-index: 10;
+        }
+    }
+
+    .library{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    .song-container{
+        .vinyl{
+            width: 25rem;
+            height: 25rem;
+        }
+        img{
+            width: 65%;
+        }
+        .vinyl::after{
+            border-width: 210px 70px;
+        }
+    }
+
+    .time-control, .volume-control{
+        width: 70%;
+    }
+    
+    nav{
+        button{
+            z-index: 10;
+        }
+    }
+
+    .library{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .song-container{
+        .vinyl{
+            width: 25rem;
+            height: 25rem;
+        }
+        img{
+            width: 60%;
+        }
+        .vinyl::after{
+            border-width: 180px 65px
+        }
+    }
+
+    .time-control, .volume-control{
+        width: 70%;
+    }
+    
+    nav{
+        button{
+            z-index: 10;
+        }
+    }
+
+    .library{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 540px), screen and (max-height: 720) {
+    .song-container{
+        .vinyl{
+            width: 20rem;
+            height: 20rem;
+        }
+        img{
+            width: 60%;
+        }
+        .vinyl::after{
+            border-width: 180px 65px
+        }
+    }
+
+    .time-control, .volume-control{
+        width: 70%;
+    }
+    
+    nav{
+        button{
+            z-index: 10;
+        }
+    }
+
+    .library{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .song-container{
+        .vinyl{
+            width: 20rem;
+            height: 20rem;
+        }
+        img{
+            width: 60%;
+        }
+        .vinyl::after{
+            border-width: 170px 60px;
+        }
+    }
+
+    .time-control, .volume-control, .play-control{
+        width: 90%;
+    }
+    
+    nav{
+        h1{
+            font-size: 2rem;
+        }
+        button{
+            z-index: 10;
+        }
+    }
+
+    .library{
+        width: 100vw;
+    }
+
+    .song-container{
+        min-height: 55vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .song-container{
+        .vinyl{
+            width: 14rem;
+            height: 14rem;
+        }
+        img{
+            width: 70%;
+        }
+        .vinyl::after{
+            border-width: 120px 40px;
+        }
+    }
+
+    .time-control, .volume-control, .play-control{
+        width: 90%;
+        font-size: .8rem;
+    }
+    
+    nav{
+        h1{
+            font-size: 2rem;
+        }
+        button{
+            z-index: 10;
+        }
+    }
+
+    .library{
+        width: 100vw;
+    }
+
+    .song-container{
+        min-height: 55vh;
+    }
+    
+}

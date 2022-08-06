@@ -1,0 +1,59 @@
+.song-container{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+        padding: 2rem 1rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    transition: all 0.5s ease;
+}
+
+.vinyl {
+    display: flex;
+    width: 30rem;
+    height: 30rem;
+    align-items: center;
+    justify-content: center;
+    background-image: repeating-radial-gradient(#131313, #131313 5%, #202020 15%);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    img{
+        width: 65%;
+        border-radius: 50%;
+        transition: all 0.5s ease;
+    }
+    transition: all 0.5s ease;
+}
+
+.vinyl::after{
+    content: "";
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5) transparent;
+    position: absolute;
+    border-width: 250px 70px;
+    filter: blur(15px);
+    transform: rotate(120deg);
+    -webkit-filter: blur(15px);
+    
+}
+
+.songCover{
+    animation: rotate 25s linear infinite;
+    animation-play-state: paused;
+}
+
+.songCover.active{
+    animation-play-state: running;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
